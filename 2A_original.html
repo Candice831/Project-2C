@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2A(the original version)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         @font-face {
+            font-family: 'VujahdayScript';
+            src: url(./font/VujahdayScript-Regular.ttf);
+        }
+
+        body {
+            background-image: url(./img/Jonquil.jpg);
+            background-size: contain;
+            margin: 0;
+            display: flex;
+            text-align: left;
+            padding: 30px;
+            flex-direction: column;
+            background-color: #fff0f5;
+            display: flex;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .back {
+            font-family: 'VujahdayScript';
+            font-size: 30px;
+            color:#f19ead;
+            position: fixed;
+            top: 20px;
+            right: 60px;
+            cursor: pointer;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        @keyframes fading {
+            from {
+                visibility: visible;
+                opacity: 0;
+            }
+            to {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .back:hover {
+            color: #7cc36f;
+        }
+
+        .nav-tab {
+            left: 0;
+            top: 50%;
+            font-family: 'VujahdayScript';
+            position: fixed;
+            list-style: none;
+            background-color: rgb(255, 240, 248);
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgb(255, 212, 239);
+        }
+        
+        .nav-tab li {
+            margin-top: 12px;
+        }
+        
+        .nav-tab a{
+            color: #eaa9c1;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .nav-tab a i {
+            font-size: 20px;
+        }
+        
+        .nav-tab a span {
+            position: absolute;
+            left: calc(100% + 24px);
+            background-color: #beffc3;
+            font-size: 15px;
+            white-space: nowrap;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transform: scale(0);
+            opacity: 0;
+            transform-origin: center left;
+            transition: 0.15s ease;
+        }
+
+        .nav-tab a:hover {
+            background-color: rgb(255, 215, 227);
+            outline: none;
+        }
+        
+        .nav-tab a:hover span{
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        header {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-family: 'Hubballi';
+            color: #f19ead;
+        }
+
+        h1 {
+            font-family: 'VujahdayScript';
+            font-size: 50px;
+            color: #f19ead;
+            margin-bottom: 80px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        img {
+            width: 350px;
+            margin-left: 150px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            margin-right: 20px;
+        }
+
+        img:hover {
+            box-shadow: 0 15px 30px #ecc2d2;
+            transform: scale(1.25);
+            z-index: 1;
+        }
+
+        p {
+            color: #f19ead;
+            font-family: 'VujahdayScript';
+            font-size: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="2A.html" class="back">back</a>
+
+    <header>🌷</header>
+    
+    <ul class="nav-tab">
+        <li>
+            <a href="#week1">
+                <i class="week_1">🌸</i>
+                <span>Week 1</span>
+            </a>
+        </li>
+        <li>
+            <a href="#week2">
+                <i class="week_2">🌸</i>
+                <span>Week 2</span>
+            </a>
+        </li>
+        <li>
+            <a href="#week3">
+                <i class="week_3">🌸</i>
+                <span>Week 3</span>
+            </a>
+        </li>
+    </ul>
+
+    <section id="week1" class="section">
+        <h1>Week 1</h1>
+        <div class="container">
+            <img src="./img/tag_layout.JPG">
+            <img src="./img/tag.JPG">
+            <img src="./img/gesture.JPG">
+            <p>Activities from Week 1<br>HUMAN COMPUTER IN YOUR FACE!</br>TAG!</p>
+        </div>
+    </section>
+
+    <section id="week2" class="section">
+        <h1>Week 2</h1>
+        <div class="container">
+            <div class="fading">
+                <img src="./img/week2.JPG">
+                <img src="./img/week2practice.png">
+                <div class="text">
+                    <p>Activities from Week 2<br>Crazy eight<br>&</br>Github</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="week3" class="section">
+        <h1>Week 3</h1>
+        <div class="container">
+            <div class="fading">
+                <img src="./img/week3.JPG">
+                <img src="./img/practice.png">
+                <div class="text">
+                    <p>Activities from Week 3<br>Make it bling</br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

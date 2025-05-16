@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camera_capture</title>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <style>
+        *{
+        font-family: 'Elite';
+        cursor: url('./img/dot-black.png'), auto;
+
+    }  
+
+    @font-face {
+        font-family: 'Elite';
+        src: url(./font/SpecialElite-Regular.ttf);
+    }
+
+    body {
+        background-image: url(./img/texture1.jpeg);
+        background-size: cover;
+    }
+
+    .back {
+        font-family: 'Elite';
+        font-size: 20px;
+        color: rgb(119, 111, 111);
+        position: fixed;
+        top: 20px;
+        right: 60px;
+        text-decoration: none;
+        z-index: 2;
+    }
+
+    .back:hover {
+        color: rgb(113, 151, 126);
+        cursor: url('./img/dot-green.png'), auto;
+    }
+
+    </style>
+</head>
+<body>
+    <a href="2B.html" class="back">back</a>
+    <script src="camera_capture.js"></script>
+</body>
+</html>

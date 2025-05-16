@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workbook_2B</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <style>
+
+        * {
+            font-family: 'Elite';
+            cursor: url('./img/dot-black.png'), auto;
+        }
+
+        @font-face {
+            font-family: 'Elite';
+            src: url(./font/SpecialElite-Regular.ttf);
+        }
+
+        body {
+            height: 100vh;
+            padding-left: 60px;
+            background-image: url(img/texture1.jpeg);
+            background-size: cover;
+        }
+
+        header {
+            font-size: 55px;
+            margin-top: 60px;
+        }       
+
+        .typing {
+            display: inline-block;
+            position: relative;
+            font-family: 'Elite';
+            font-size: 55px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 2.5s steps(60) 0.5s forwards;
+        }
+
+        @keyframes typing {
+            from { 
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        a {
+            font-family: 'Elite';
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(113, 151, 126);
+            cursor: url('./img/dot-green.png'), auto;
+        }
+
+        .a-typing {
+            display: inline-block;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 2.5s steps(20) 2s forwards;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title" class="typing">Welcome to my workbook ^ ^</div>
+    </header>
+    <a href="menu.html" class="start a-typing">click to start . . .</a>
+</body>
+</html>

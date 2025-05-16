@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2A_original_coverpage</title>
+    <style>
+        @font-face {
+            font-family: "BungeeShade";
+            src: url(./font/BungeeShade-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'VujahdayScript';
+            src: url(./font/VujahdayScript-Regular.ttf);
+        }
+
+        @font-face {
+          font-family: 'Hubballi';
+          src: url(font/Hubballi-Regular.ttf);
+        }
+
+        .typing {
+            position: relative;
+            font-family: 'BungeeShade';
+            font-size: 55px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 2s steps(20) 0.5s forwards;
+        }
+
+        @keyframes typing {
+            from { 
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        header {
+            text-align: center;
+            font-family: "BungeeShade";
+            color: #f39aaa;
+            font-size: 55px;
+        }
+
+        .start {
+            text-align: center;
+            font-family: 'VujahdayScript';
+            font-size: 30px;
+            color:#f19ead;
+            position: absolute;
+            bottom: 400px;
+            cursor: pointer;
+            transition: color 0.3s;
+            text-decoration: none;
+            animation: fading 3s ease forwards;
+            animation-delay: 3s;
+            visibility: hidden;
+        }
+
+        @keyframes fading {
+            from {
+                visibility: visible;
+                opacity: 0;
+            }
+            to {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .start:hover {
+            color: #7cc36f;
+        }
+
+        body {
+            background-image: url(./img/Jonquil.jpg);
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'VujahdayScript';
+            font-size: 20px;
+            position: absolute;
+            bottom: 600px;
+            color: #f19ead;
+            animation: fading 3s ease forwards;
+            animation-delay: 3s;
+            visibility: hidden;
+        }
+
+        .shooting-stars {
+      position: absolute;
+      z-index: -10;
+    }
+
+    .bgl1 {
+      color: rgb(245, 245, 171);
+      font-size: 1.4em;
+      letter-spacing: -2px;
+      text-shadow: 2px 2px 20px yellow;
+      opacity: 0.9;
+    }
+
+    #bgl1 {
+      position: absolute;
+      top: 0px;
+      right: 10vw;
+      animation: shootingStar 5.3s linear infinite;
+    }
+
+    #bgl2 {
+      position: absolute;
+      top: 0px;
+      right: 50vw;
+      animation: shootingStar 4.7s linear infinite;
+    }
+
+    #bgl3 {
+      position: absolute;
+      top: -15vh;
+      right: 60vw;
+      animation: shootingStar 7.2s linear infinite;
+      animation-delay: 5.2s;
+    }
+
+    #bgl4 {
+      position: absolute;
+      top: -30vh;
+      right: 90vw;
+      animation: shootingStar 6.3s linear infinite;
+      animation-delay: 4s;
+    }
+
+    #bgl5 {
+      position: absolute;
+      top: -40vh;
+      right: 30vw;
+      animation: shootingStar 6s linear infinite;
+    }
+
+    #bgl6 {
+      position: absolute;
+      top: -3vh;
+      right: -50vw;
+      animation: shootingStar 5s linear infinite;
+      animation-delay: 3.2s;
+    }
+
+    #bgl7 {
+      position: absolute;
+      top: -22px;
+      right: -20vw;
+      animation: shootingStar 6s linear infinite;
+      animation-delay: 4.2s;
+    }
+
+    #bgl8 {
+      position: absolute;
+      top: -15vh;
+      right: 60vw;
+      animation: shootingStar 7.2s linear infinite;
+      animation-delay: 5.2s;
+    }
+
+    #bgl9 {
+      position: absolute;
+      top: -30vh;
+      right: 90vw;
+      animation: shootingStar 6.3s linear infinite;
+      animation-delay: 4s;
+    }
+
+    #bgl10 {
+      position: absolute;
+      top: -40vh;
+      right: 30vw;
+      animation: shootingStar 6s linear infinite;
+    }
+
+    #bgl11 {
+      position: absolute;
+      top: -3vh;
+      right: -50vw;
+      animation: shootingStar 5s linear infinite;
+      animation-delay: 3.2s;
+    }
+
+    @keyframes stars-fall {
+      0% {
+        line-height: 5px;
+      }
+      100% {
+        line-height: 10px;
+      }
+    }
+
+    @keyframes shootingStar {
+      0% {
+        transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+      }
+      100% {
+        transform: rotateZ(-70deg) translateX(-250vw) translateY(100vh);
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="welcomeType" class="typing">Web design workbook</div>
+    </header>
+    <a href="2A_original.html" class="start">click to start</a>
+    <h1>Yanru He 1450671</h1>
+
+    <div id="falling-flowers">
+        <div class="bgl1" id="bgl1"><pre>🌸</pre></div>
+        <div class="bgl1" id="bgl2"><pre>🌸</pre></div>
+        <div class="bgl1" id="bgl3"><pre>🌸</pre></div>
+        <div class="bgl1" id="bgl4"><pre>✨</pre></div>
+        <div class="bgl1" id="bgl5"><pre>✨</pre></div>
+        <div class="bgl1" id="bgl6"><pre>🌸</pre></div>
+        <div class="bgl1" id="bgl7"><pre>✨</pre></div>
+        <div class="bgl1" id="bgl8"><pre>✨</pre></div>
+        <div class="bgl1" id="bgl9"><pre>✨</pre></div>
+        <div class="bgl1" id="bgl10"><pre>🌸</pre></div>
+        <div class="bgl1" id="bgl11"><pre>✨</pre></div>
+    </div>
+</body>
+</html>
